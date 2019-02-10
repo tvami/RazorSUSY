@@ -276,8 +276,8 @@ h3_HT_MET_TrigEff_HLT_PFHT1050->Project3DProfile("xz")->GetMean(1)
 h3_HT_MET_TrigEff_HLT_PFHT500_PFMET100_PFMHT100_IDTight->Project3DProfile("xz")->GetMean(1)
 
 //Average efficiency
-h3_HT_MET_TrigEff_HLT_AK8PFJet450Extra->Project3DProfile("xz")->GetMean(1)
-h3_HT_MET_TrigEff_HLT_AK8PFJet400_TrimMass30Extra->Project3DProfile("xz")->GetMean(1)
-h3_HT_MET_TrigEff_HLT_AK8PFHT800_TrimMass50Extra->Project3DProfile("xz")->GetMean(1)
-h3_HT_MET_TrigEff_HLT_PFHT1050Extra->Project3DProfile("xz")->GetMean(1)
-h3_HT_MET_TrigEff_HLT_PFHT500_PFMET100_PFMHT100_IDTightExtra->Project3DProfile("xz")->GetMean(1)
+h3_HT_MET_TrigEffExtra_HLT_AK8PFJet450->Project3DProfile("xz")->GetMean(1)
+h3_HT_MET_TrigEffExtra_HLT_AK8PFJet400_TrimMass30->Project3DProfile("xz")->GetMean(1)
+h3_HT_MET_TrigEffExtra_HLT_AK8PFHT800_TrimMass50->Project3DProfile("xz")->GetMean(1)
+h3_HT_MET_TrigEffExtra_HLT_PFHT1050->Project3DProfile("xz")->GetMean(1)
+h3_HT_MET_TrigEffExtra_HLT_PFHT500_PFMET100_PFMHT100_IDTight->Project3DProfile("xz")->GetMean(1)
