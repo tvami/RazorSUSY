@@ -310,9 +310,6 @@ h3_R2_MR_TrigEffExtra_HLT_AK8PFHT800_TrimMass50->ProjectionY("h3_R2_MR_TrigEffEx
 c1->SaveAs("h3_R2_MR_TrigEffExtra_HLT_AK8PFHT800_TrimMass50_py.png")
 h3_R2_MR_TrigEffExtra_HLT_PFHT1050->ProjectionY("h3_R2_MR_TrigEffExtra_HLT_PFHT1050_py",0,-1,2,2)->Draw()
 c1->SaveAs("h3_R2_MR_TrigEffExtra_HLT_PFHT1050_py.png")
-h3_R2_MR_TrigEffExtra_HLT_PFHT500_PFMET100_PFMHT100_IDTight->ProjectionY("h3_R2_MR_TrigEffExtra_HLT_PFHT500_PFMET100_PFMHT100_IDTight_py",0,-1,2,2)->Draw()
-c1->SaveAs("h3_R2_MR_TrigEffExtra_HLT_PFHT500_PFMET100_PFMHT100_IDTight_py.png")
-
 
 //Average efficiency
 h3_HT_MET_TrigEff_HLT_AK8PFJet450->Project3DProfile("xz")->GetMean(1)
