@@ -299,8 +299,6 @@ h3_R2_MR_TrigEffExtra_HLT_AK8PFHT800_TrimMass50->ProjectionX("h3_R2_MR_TrigEffEx
 c1->SaveAs("h3_R2_MR_TrigEffExtra_HLT_AK8PFHT800_TrimMass50_px.png")
 h3_R2_MR_TrigEffExtra_HLT_PFHT1050->ProjectionX("h3_R2_MR_TrigEffExtra_HLT_PFHT1050_px",0,-1,2,2)->Draw()
 c1->SaveAs("h3_R2_MR_TrigEffExtra_HLT_PFHT1050_px.png")
-h3_R2_MR_TrigEffExtra_HLT_PFHT500_PFMET100_PFMHT100_IDTight->ProjectionX("h3_R2_MR_TrigEffExtra_HLT_PFHT500_PFMET100_PFMHT100_IDTight_px",0,-1,2,2)->Draw()
-c1->SaveAs("h3_R2_MR_TrigEffExtra_HLT_PFHT500_PFMET100_PFMHT100_IDTight_px.png")
 
 h3_R2_MR_TrigEffExtra_HLT_AK8PFJet450->ProjectionY("h3_R2_MR_TrigEffExtra_HLT_AK8PFJet450_py",0,-1,2,2)->Draw()
 c1->SaveAs("h3_R2_MR_TrigEffExtra_HLT_AK8PFJet450_py.png")
