@@ -400,6 +400,6 @@ h3_R2_MR_TrigEff_HLT_Combined2_pyx->GetZaxis()->SetRangeUser(0.95,1.001)
 c1->SaveAs("h3_R2_MR_TrigEff_HLT_Combined2_pyx.png")
 
 //Average efficiency
-h3_HT_MET_TrigEffExtra_HLT_Combined1->Project3DProfile("xz")->GetMean(1)
-h3_HT_MET_TrigEffExtra_HLT_Combined2->Project3DProfile("yz")->GetMean(1)
+h3_HT_MET_TrigEff_HLT_Combined1->Project3DProfile("xz")->GetMean(1)
+h3_HT_MET_TrigEff_HLT_Combined2->Project3DProfile("yz")->GetMean(1)
   
