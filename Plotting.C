@@ -416,4 +416,19 @@ c1->SaveAs("h3_R2_MR_TrigEff_HLT_Combined2_py.png")
 //Average efficiency
 h3_HT_MET_TrigEff_HLT_Combined1->Project3DProfile("xz")->GetMean(1)
 h3_HT_MET_TrigEff_HLT_Combined2->Project3DProfile("yz")->GetMean(1)
-  
+
+  // mass, pt, eta of the 3 combination
+  h2_TrigEff_HLT_Combined2_mass->ProfileX()->Draw("COLZ");
+h2_TrigEff_HLT_Combined2_mass_pfx->GetYaxis()->SetTitle("Trigger efficiency");
+h2_TrigEff_HLT_Combined2_mass_pfx->GetYaxis()->SetRangeUser(0.95,1.001);
+c1->SaveAs("h2_TrigEff_HLT_Combined2_mass_pfx.png");
+
+h2_TrigEff_HLT_Combined2_pt->ProfileX()->Draw("COLZ");
+h2_TrigEff_HLT_Combined2_pt_pfx->GetYaxis()->SetTitle("Trigger efficiency");
+h2_TrigEff_HLT_Combined2_pt_pfx->GetYaxis()->SetRangeUser(0.95,1.001);
+c1->SaveAs("h2_TrigEff_HLT_Combined2_pt_pfx.png");
+
+h2_TrigEff_HLT_Combined2_eta->ProfileX()->Draw("COLZ");
+h2_TrigEff_HLT_Combined2_eta_pfx->GetYaxis()->SetTitle("Trigger efficiency");
+h2_TrigEff_HLT_Combined2_eta_pfx->GetYaxis()->SetRangeUser(0.95,1.001);
+c1->SaveAs("h2_TrigEff_HLT_Combined2_eta_pfx.png");
