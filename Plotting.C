@@ -337,23 +337,21 @@ c1->SaveAs("h3_HT_MET_TrigEff_HLT_Combined2_py.png")
 //HT efficiency
 h2_HT_TrigEff_HLT_Combined1->ProfileX()->Draw("COLZ")
 h2_HT_TrigEff_HLT_Combined1_pfx->GetYaxis()->SetTitle("Trigger efficiency")
- h2_HT_TrigEff_HLT_Combined2_pfx->GetYaxis()->SetRangeUser(0.95,1.001)
 c1->SaveAs("h2_HT_TrigEff_HLT_Combined1_pfx.png")
 
 h2_HT_TrigEff_HLT_Combined2->ProfileX()->Draw("COLZ")
 h2_HT_TrigEff_HLT_Combined2_pfx->GetYaxis()->SetTitle("Trigger efficiency")
- h2_HT_TrigEff_HLT_Combined2_pfx->GetYaxis()->SetRangeUser(0.95,1.001)
 c1->SaveAs("h2_HT_TrigEff_HLT_Combined2_pfx.png")
 
 //MET efficiency
 h2_MET_TrigEff_HLT_Combined1->ProfileX()->Draw("COLZ")
 h2_MET_TrigEff_HLT_Combined1_pfx->GetYaxis()->SetTitle("Trigger efficiency")
-h2_MET_TrigEff_HLT_Combined1_pfx->GetYaxis()->SetRangeUser(0.95,1.001)
+//h2_MET_TrigEff_HLT_Combined1_pfx->GetYaxis()->SetRangeUser(0.95,1.001)
 c1->SaveAs("h2_MET_TrigEff_HLT_Combined1_pfx.png")
 
 h2_MET_TrigEff_HLT_Combined2->ProfileX()->Draw("COLZ")
 h2_MET_TrigEff_HLT_Combined2_pfx->GetYaxis()->SetTitle("Trigger efficiency")
-h2_MET_TrigEff_HLT_Combined2_pfx->GetYaxis()->SetRangeUser(0.95,1.001)
+//h2_MET_TrigEff_HLT_Combined2_pfx->GetYaxis()->SetRangeUser(0.95,1.001)
 c1->SaveAs("h2_MET_TrigEff_HLT_Combined2_pfx.png")
 
 //2D efficiency
@@ -363,14 +361,14 @@ h3_HT_MET_TrigEff_HLT_Combined1->Project3DProfile("xy")->Draw("COLZ")
 h3_HT_MET_TrigEff_HLT_Combined1_pxy->GetYaxis()->SetTitle("MET (GeV)")
 h3_HT_MET_TrigEff_HLT_Combined1_pxy->GetXaxis()->SetTitle("H_{T} (GeV)")
 h3_HT_MET_TrigEff_HLT_Combined1_pxy->SetTitle("Trigger efficiency")
-h3_HT_MET_TrigEff_HLT_Combined1_pxy->GetZaxis()->SetRangeUser(0.95,1.001)
+//h3_HT_MET_TrigEff_HLT_Combined1_pxy->GetZaxis()->SetRangeUser(0.95,1.001)
 c1->SaveAs("h3_HT_MET_TrigEff_HLT_Combined1_pxy.png")
 
 h3_HT_MET_TrigEff_HLT_Combined2->Project3DProfile("xy")->Draw("COLZ")
 h3_HT_MET_TrigEff_HLT_Combined2_pxy->GetYaxis()->SetTitle("MET (GeV)")
 h3_HT_MET_TrigEff_HLT_Combined2_pxy->GetXaxis()->SetTitle("H_{T} (GeV)")
 h3_HT_MET_TrigEff_HLT_Combined2_pxy->SetTitle("Trigger efficiency")
-h3_HT_MET_TrigEff_HLT_Combined2_pxy->GetZaxis()->SetRangeUser(0.95,1.001)
+//h3_HT_MET_TrigEff_HLT_Combined2_pxy->GetZaxis()->SetRangeUser(0.95,1.001)
 c1->SaveAs("h3_HT_MET_TrigEff_HLT_Combined2_pxy.png")
 
 //R2-MR plots
@@ -388,14 +386,14 @@ h3_R2_MR_TrigEff_HLT_Combined1->Project3DProfile("yx")->Draw("COLZ")
 h3_R2_MR_TrigEff_HLT_Combined1_pyx->GetXaxis()->SetTitle("M_{R} (GeV)")
 h3_R2_MR_TrigEff_HLT_Combined1_pyx->GetYaxis()->SetTitle("R^{2}")
 h3_R2_MR_TrigEff_HLT_Combined1_pyx->SetTitle("Trigger efficiency")
-h3_R2_MR_TrigEff_HLT_Combined1_pyx->GetZaxis()->SetRangeUser(0.95,1.001)
+//h3_R2_MR_TrigEff_HLT_Combined1_pyx->GetZaxis()->SetRangeUser(0.95,1.001)
 c1->SaveAs("h3_R2_MR_TrigEff_HLT_Combined1_pyx.png")
 
 h3_R2_MR_TrigEff_HLT_Combined2->Project3DProfile("yx")->Draw("COLZ")
 h3_R2_MR_TrigEff_HLT_Combined2_pyx->GetXaxis()->SetTitle("M_{R} (GeV)")
 h3_R2_MR_TrigEff_HLT_Combined2_pyx->GetYaxis()->SetTitle("R^{2}")
 h3_R2_MR_TrigEff_HLT_Combined2_pyx->SetTitle("Trigger efficiency")
-h3_R2_MR_TrigEff_HLT_Combined2_pyx->GetZaxis()->SetRangeUser(0.95,1.001)
+//h3_R2_MR_TrigEff_HLT_Combined2_pyx->GetZaxis()->SetRangeUser(0.95,1.001)
 c1->SaveAs("h3_R2_MR_TrigEff_HLT_Combined2_pyx.png")
   
   h3_R2_MR_TrigEff_HLT_Combined1->ProjectionX("h3_R2_MR_TrigEff_HLT_Combined1_px",0,-1,2,2)->Draw()
@@ -417,15 +415,15 @@ h3_HT_MET_TrigEff_HLT_Combined2->Project3DProfile("yz")->GetMean(1)
   // mass, pt, eta of the 3 combination
   h2_TrigEff_HLT_Combined2_mass->ProfileX()->Draw("COLZ");
 h2_TrigEff_HLT_Combined2_mass_pfx->GetYaxis()->SetTitle("Trigger efficiency");
-h2_TrigEff_HLT_Combined2_mass_pfx->GetYaxis()->SetRangeUser(0.95,1.001);
+//h2_TrigEff_HLT_Combined2_mass_pfx->GetYaxis()->SetRangeUser(0.95,1.001);
 c1->SaveAs("h2_TrigEff_HLT_Combined2_mass_pfx.png");
 
 h2_TrigEff_HLT_Combined2_pt->ProfileX()->Draw("COLZ");
 h2_TrigEff_HLT_Combined2_pt_pfx->GetYaxis()->SetTitle("Trigger efficiency");
-h2_TrigEff_HLT_Combined2_pt_pfx->GetYaxis()->SetRangeUser(0.95,1.001);
+//h2_TrigEff_HLT_Combined2_pt_pfx->GetYaxis()->SetRangeUser(0.95,1.001);
 c1->SaveAs("h2_TrigEff_HLT_Combined2_pt_pfx.png");
 
 h2_TrigEff_HLT_Combined2_eta->ProfileX()->Draw("COLZ");
 h2_TrigEff_HLT_Combined2_eta_pfx->GetYaxis()->SetTitle("Trigger efficiency");
-h2_TrigEff_HLT_Combined2_eta_pfx->GetYaxis()->SetRangeUser(0.95,1.001);
+//h2_TrigEff_HLT_Combined2_eta_pfx->GetYaxis()->SetRangeUser(0.95,1.001);
 c1->SaveAs("h2_TrigEff_HLT_Combined2_eta_pfx.png");
