@@ -321,7 +321,6 @@ h3_HT_MET_TrigEffExtra_HLT_AK8PFJet450->Project3DProfile("xz")->GetMean(1)
 h3_HT_MET_TrigEffExtra_HLT_AK8PFJet400_TrimMass30->Project3DProfile("xz")->GetMean(1)
 h3_HT_MET_TrigEffExtra_HLT_AK8PFHT800_TrimMass50->Project3DProfile("xz")->GetMean(1)
 h3_HT_MET_TrigEffExtra_HLT_PFHT1050->Project3DProfile("xz")->GetMean(1)
-h3_HT_MET_TrigEffExtra_HLT_PFHT500_PFMET100_PFMHT100_IDTight->Project3DProfile("xz")->GetMean(1)
   
 // Combination of two (three triggers)
   //HT and MET distributions
@@ -410,8 +409,6 @@ c1->SaveAs("h3_R2_MR_TrigEff_HLT_Combined2_px.png")
 
 h3_R2_MR_TrigEff_HLT_Combined2->ProjectionY("h3_R2_MR_TrigEff_HLT_Combined2_py",0,-1,2,2)->Draw()
 c1->SaveAs("h3_R2_MR_TrigEff_HLT_Combined2_py.png")
-
-
 
 //Average efficiency
 h3_HT_MET_TrigEff_HLT_Combined1->Project3DProfile("xz")->GetMean(1)
