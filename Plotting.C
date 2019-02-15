@@ -355,6 +355,19 @@ h2_MET_TrigEff_HLT_Combined2_pfx->GetYaxis()->SetTitle("Trigger efficiency")
 //h2_MET_TrigEff_HLT_Combined2_pfx->GetYaxis()->SetRangeUser(0.95,1.001)
 c1->SaveAs("h2_MET_TrigEff_HLT_Combined2_pfx.png")
 
+// MR and R2 distributions
+h3_R2_MR_TrigEff_HLT_Combined1->ProjectionX("h3_R2_MR_TrigEff_HLT_Combined1_px",0,-1,2,2)->Draw()
+c1->SaveAs("h3_R2_MR_TrigEff_HLT_Combined1_px.png")
+
+h3_R2_MR_TrigEff_HLT_Combined1->ProjectionY("h3_R2_MR_TrigEff_HLT_Combined1_py",0,-1,2,2)->Draw()
+c1->SaveAs("h3_R2_MR_TrigEff_HLT_Combined1_py.png")
+
+h3_R2_MR_TrigEff_HLT_Combined2->ProjectionX("h3_R2_MR_TrigEff_HLT_Combined2_px",0,-1,2,2)->Draw()
+c1->SaveAs("h3_R2_MR_TrigEff_HLT_Combined2_px.png")
+
+h3_R2_MR_TrigEff_HLT_Combined2->ProjectionY("h3_R2_MR_TrigEff_HLT_Combined2_py",0,-1,2,2)->Draw()
+c1->SaveAs("h3_R2_MR_TrigEff_HLT_Combined2_py.png")
+
 //2D efficiency
 gStyle->SetOptStat(0)
 
@@ -397,17 +410,7 @@ h3_R2_MR_TrigEff_HLT_Combined2_pyx->SetTitle("Trigger efficiency")
 //h3_R2_MR_TrigEff_HLT_Combined2_pyx->GetZaxis()->SetRangeUser(0.95,1.001)
 c1->SaveAs("h3_R2_MR_TrigEff_HLT_Combined2_pyx.png")
   
-  h3_R2_MR_TrigEff_HLT_Combined1->ProjectionX("h3_R2_MR_TrigEff_HLT_Combined1_px",0,-1,2,2)->Draw()
-c1->SaveAs("h3_R2_MR_TrigEff_HLT_Combined1_px.png")
 
-h3_R2_MR_TrigEff_HLT_Combined1->ProjectionY("h3_R2_MR_TrigEff_HLT_Combined1_py",0,-1,2,2)->Draw()
-c1->SaveAs("h3_R2_MR_TrigEff_HLT_Combined1_py.png")
-
-h3_R2_MR_TrigEff_HLT_Combined2->ProjectionX("h3_R2_MR_TrigEff_HLT_Combined2_px",0,-1,2,2)->Draw()
-c1->SaveAs("h3_R2_MR_TrigEff_HLT_Combined2_px.png")
-
-h3_R2_MR_TrigEff_HLT_Combined2->ProjectionY("h3_R2_MR_TrigEff_HLT_Combined2_py",0,-1,2,2)->Draw()
-c1->SaveAs("h3_R2_MR_TrigEff_HLT_Combined2_py.png")
 
 //Average efficiency
 h3_HT_MET_TrigEff_HLT_Combined1->Project3DProfile("xz")->GetMean(1)
