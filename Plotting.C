@@ -66,6 +66,29 @@ h2_MET_TrigEff_HLT_PFHT500_PFMET100_PFMHT100_IDTight->ProfileX()->Draw("COLZ")
 h2_MET_TrigEff_HLT_PFHT500_PFMET100_PFMHT100_IDTight_pfx->GetYaxis()->SetTitle("Trigger efficiency")
 c1->SaveAs("h2_MET_TrigEff_HLT_PFHT500_PFMET100_PFMHT100_IDTight_pfx.png")
 
+//MR and R2 distributions 
+h3_R2_MR_TrigEff_HLT_AK8PFJet450->ProjectionX("h3_R2_MR_TrigEff_HLT_AK8PFJet450_px",0,-1,2,2)->Draw()
+c1->SaveAs("h3_R2_MR_TrigEff_HLT_AK8PFJet450_px.png")
+h3_R2_MR_TrigEff_HLT_AK8PFJet400_TrimMass30->ProjectionX("h3_R2_MR_TrigEff_HLT_AK8PFJet400_TrimMass30_px",0,-1,2,2)->Draw()
+c1->SaveAs("h3_R2_MR_TrigEff_HLT_AK8PFJet400_TrimMass30_px.png")
+h3_R2_MR_TrigEff_HLT_AK8PFHT800_TrimMass50->ProjectionX("h3_R2_MR_TrigEff_HLT_AK8PFHT800_TrimMass50_px",0,-1,2,2)->Draw()
+c1->SaveAs("h3_R2_MR_TrigEff_HLT_AK8PFHT800_TrimMass50_px.png")
+h3_R2_MR_TrigEff_HLT_PFHT1050->ProjectionX("h3_R2_MR_TrigEff_HLT_PFHT1050_px",0,-1,2,2)->Draw()
+c1->SaveAs("h3_R2_MR_TrigEff_HLT_PFHT1050_px.png")
+h3_R2_MR_TrigEff_HLT_PFHT500_PFMET100_PFMHT100_IDTight->ProjectionX("h3_R2_MR_TrigEff_HLT_PFHT500_PFMET100_PFMHT100_IDTight_px",0,-1,2,2)->Draw()
+c1->SaveAs("h3_R2_MR_TrigEff_HLT_PFHT500_PFMET100_PFMHT100_IDTight_px.png")
+
+h3_R2_MR_TrigEff_HLT_AK8PFJet450->ProjectionY("h3_R2_MR_TrigEff_HLT_AK8PFJet450_py",0,-1,2,2)->Draw()
+c1->SaveAs("h3_R2_MR_TrigEff_HLT_AK8PFJet450_py.png")
+h3_R2_MR_TrigEff_HLT_AK8PFJet400_TrimMass30->ProjectionY("h3_R2_MR_TrigEff_HLT_AK8PFJet400_TrimMass30_py",0,-1,2,2)->Draw()
+c1->SaveAs("h3_R2_MR_TrigEff_HLT_AK8PFJet400_TrimMass30_py.png")
+h3_R2_MR_TrigEff_HLT_AK8PFHT800_TrimMass50->ProjectionY("h3_R2_MR_TrigEff_HLT_AK8PFHT800_TrimMass50_py",0,-1,2,2)->Draw()
+c1->SaveAs("h3_R2_MR_TrigEff_HLT_AK8PFHT800_TrimMass50_py.png")
+h3_R2_MR_TrigEff_HLT_PFHT1050->ProjectionY("h3_R2_MR_TrigEff_HLT_PFHT1050_py",0,-1,2,2)->Draw()
+c1->SaveAs("h3_R2_MR_TrigEff_HLT_PFHT1050_py.png")
+h3_R2_MR_TrigEff_HLT_PFHT500_PFMET100_PFMHT100_IDTight->ProjectionY("h3_R2_MR_TrigEff_HLT_PFHT500_PFMET100_PFMHT100_IDTight_py",0,-1,2,2)->Draw()
+c1->SaveAs("h3_R2_MR_TrigEff_HLT_PFHT500_PFMET100_PFMHT100_IDTight_py.png")
+
 //2D efficiency
 gStyle->SetOptStat(0)
 
@@ -113,29 +136,6 @@ h2_R2_MR_HLT_PFHT1050->Draw("COLZ")
 c1->SaveAs("h2_R2_MR_HLT_PFHT1050.png")
 h2_R2_MR_HLT_PFHT500_PFMET100_PFMHT100_IDTight->Draw("COLZ")
 c1->SaveAs("h2_R2_MR_HLT_PFHT500_PFMET100_PFMHT100_IDTight.png")
-  
-//MR and R2 distributions 
-h3_R2_MR_TrigEff_HLT_AK8PFJet450->ProjectionX("h3_R2_MR_TrigEff_HLT_AK8PFJet450_px",0,-1,2,2)->Draw()
-c1->SaveAs("h3_R2_MR_TrigEff_HLT_AK8PFJet450_px.png")
-h3_R2_MR_TrigEff_HLT_AK8PFJet400_TrimMass30->ProjectionX("h3_R2_MR_TrigEff_HLT_AK8PFJet400_TrimMass30_px",0,-1,2,2)->Draw()
-c1->SaveAs("h3_R2_MR_TrigEff_HLT_AK8PFJet400_TrimMass30_px.png")
-h3_R2_MR_TrigEff_HLT_AK8PFHT800_TrimMass50->ProjectionX("h3_R2_MR_TrigEff_HLT_AK8PFHT800_TrimMass50_px",0,-1,2,2)->Draw()
-c1->SaveAs("h3_R2_MR_TrigEff_HLT_AK8PFHT800_TrimMass50_px.png")
-h3_R2_MR_TrigEff_HLT_PFHT1050->ProjectionX("h3_R2_MR_TrigEff_HLT_PFHT1050_px",0,-1,2,2)->Draw()
-c1->SaveAs("h3_R2_MR_TrigEff_HLT_PFHT1050_px.png")
-h3_R2_MR_TrigEff_HLT_PFHT500_PFMET100_PFMHT100_IDTight->ProjectionX("h3_R2_MR_TrigEff_HLT_PFHT500_PFMET100_PFMHT100_IDTight_px",0,-1,2,2)->Draw()
-c1->SaveAs("h3_R2_MR_TrigEff_HLT_PFHT500_PFMET100_PFMHT100_IDTight_px.png")
-
-h3_R2_MR_TrigEff_HLT_AK8PFJet450->ProjectionY("h3_R2_MR_TrigEff_HLT_AK8PFJet450_py",0,-1,2,2)->Draw()
-c1->SaveAs("h3_R2_MR_TrigEff_HLT_AK8PFJet450_py.png")
-h3_R2_MR_TrigEff_HLT_AK8PFJet400_TrimMass30->ProjectionY("h3_R2_MR_TrigEff_HLT_AK8PFJet400_TrimMass30_py",0,-1,2,2)->Draw()
-c1->SaveAs("h3_R2_MR_TrigEff_HLT_AK8PFJet400_TrimMass30_py.png")
-h3_R2_MR_TrigEff_HLT_AK8PFHT800_TrimMass50->ProjectionY("h3_R2_MR_TrigEff_HLT_AK8PFHT800_TrimMass50_py",0,-1,2,2)->Draw()
-c1->SaveAs("h3_R2_MR_TrigEff_HLT_AK8PFHT800_TrimMass50_py.png")
-h3_R2_MR_TrigEff_HLT_PFHT1050->ProjectionY("h3_R2_MR_TrigEff_HLT_PFHT1050_py",0,-1,2,2)->Draw()
-c1->SaveAs("h3_R2_MR_TrigEff_HLT_PFHT1050_py.png")
-h3_R2_MR_TrigEff_HLT_PFHT500_PFMET100_PFMHT100_IDTight->ProjectionY("h3_R2_MR_TrigEff_HLT_PFHT500_PFMET100_PFMHT100_IDTight_py",0,-1,2,2)->Draw()
-c1->SaveAs("h3_R2_MR_TrigEff_HLT_PFHT500_PFMET100_PFMHT100_IDTight_py.png")
 
 //R2-MR efficiencies
 
