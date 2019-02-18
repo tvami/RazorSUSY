@@ -431,3 +431,19 @@ h2_TrigEff_HLT_Combined2_eta->ProfileX()->Draw("COLZ");
 h2_TrigEff_HLT_Combined2_eta_pfx->GetYaxis()->SetTitle("Trigger efficiency");
 //h2_TrigEff_HLT_Combined2_eta_pfx->GetYaxis()->SetRangeUser(0.95,1.001);
 c1->SaveAs("h2_TrigEff_HLT_Combined2_eta_pfx.png");
+
+
+h2_HT_TrigEff_HLT_PFHT1050->ProfileX()->Draw()
+TF1 *f1 = new TF1("f1","[0]/(1+exp(([1]-x)/[2]))", 400., 2000.);
+
+f1->SetParameter(0, 1);
+f1->SetParLimits(0, 0.99, 1.01);
+f1->SetParameter(1, 1200.);
+f1->SetParLimits(1, 1000, 1400);
+f1->SetParameter(2, 60);
+f1->SetParLimits(2, 30, 100);
+
+f1->SetLineColor(4);
+
+h2_HT_TrigEff_HLT_PFHT1050_pfx->Fit("f1","EMR");
+h2_HT_TrigEff_HLT_PFHT1050_pfy->GetFunction("f1")->ResetBit(TF1::kNotDraw);
